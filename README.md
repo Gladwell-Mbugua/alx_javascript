@@ -1,1 +1,1 @@
-Being introduction to python, Hello World.
+Being introduction to JavaScript, It is amazing!
