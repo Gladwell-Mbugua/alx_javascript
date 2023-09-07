@@ -15,9 +15,8 @@ class Square extends ParentSquare {
         c = c[0];
       }
   
-      const line = c.repeat(this.size);
       for (let i = 0; i < this.size; i++) {
-        console.log(line);
+        console.log(c.repeat(this.size));
       }
     }
   }
