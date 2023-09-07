@@ -1,16 +1,17 @@
 #!/usr/bin/node
-class Rectangle {
-    constructor(w, h) {
-      this.width = w;
-      this.height = h;
-    }
+const Rectangle = require('./4-rectangle');
+
+class Square extends Rectangle {
+  constructor(size) {
+    super(size, size); // Call the constructor of the parent class (Rectangle) with size for both width and height
   }
-  
-  class Square extends Rectangle {
-    constructor(size) {
-      super(size, size); // Call the constructor of the parent class (Rectangle) with size for both width and height
-    }
+
+  double() {
+    this.width *= 2;
+    this.height *= 2;
   }
-  
-  module.exports = Square;
+}
+
+module.exports = Square;
+
   
